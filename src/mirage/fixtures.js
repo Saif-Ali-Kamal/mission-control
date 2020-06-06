@@ -81,6 +81,8 @@ const projects = [
                 "method":"POST",
                 "path":"/v1/login",
                 "kind":"simple",
+                "headers": [{"key": "headerKey1", "value": "headerValue1"},
+                            {"key": "headerKey2", "value": "headerValue2"}],
                 "rule": {
                   "rule": "allow"
                 }
@@ -230,7 +232,10 @@ const projects = [
               "port": 443,
               "weight": 60
             }
-          ]
+          ],
+          "rules": { "rule": "allow" },
+          "headers": [{"key": "headerKey1", "value": "headerValue1"},
+                            {"key": "headerKey2", "value": "headerValue2"}],
         }
       ],
       "fileStore": {

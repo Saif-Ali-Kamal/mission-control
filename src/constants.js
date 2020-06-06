@@ -56,6 +56,10 @@ export const defaultEndpointRule = {
   rule: "allow"
 }
 
+export const defaultIngressRoutingRule = {
+  rule: "allow"
+}
+
 export const defaultPreparedQueryRule = {
   rule: "allow"
 }
